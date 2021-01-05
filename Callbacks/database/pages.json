@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Main Page",
+    "url": "/",
+    "title": "UltraVision | Wellcome to Main Page",
+    "menu": true
+  },
+  {
+    "name": "Users Page",
+    "url": "/users",
+    "title": "Users Page | UltraVision",
+    "menu": true
+  }
+]

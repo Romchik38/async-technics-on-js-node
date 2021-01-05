@@ -1,0 +1,5 @@
+[{"name":"Ivan","lastname":"Lonachev", "login":"ivan_lon", "role": "admin", "shortdescription": "Has two technical higher educations. Married. Has a daughter and a son. In 2019, he graduated from Borton's advanced training courses.", "photo": "/img/ivan.jpg"},
+  {"name":"Roman","lastname":"Ponamarev", "login":"roman_pon", "role": "user", "shortdescription": "15 years of experience in the largest processing company in Europe. Divorced. Loves cakes and cola.", "photo": "/img/roman.jpg"},
+  {"name":"Lisa","lastname":"Adamcheva", "login":"lisa_ada", "role": "staff", "shortdescription": "Has been working for the company since its foundation. Responsible and very decent. Does her job well.", "photo": "/img/lisa.jpg"},
+  {"name":"Gennadiy","lastname":"Chabo", "login":"gena_cha", "role": "director", "shortdescription": "Founder of the company. Inspirer and thought leader. Likes to play football. Three higher educations: legal, economic and technical. Co-founder at Giant LLC.", "photo": "/img/gena.jpg"}
+]
