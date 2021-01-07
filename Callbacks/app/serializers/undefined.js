@@ -8,6 +8,7 @@ const contentType = {
   '.jpg': 'image/jpeg',
   '.css': 'text/css',
   '.png': 'image/png',
+  '.html': 'text/html',
 };
 
 const undef = obj => {
@@ -22,7 +23,7 @@ const undef = obj => {
       return;
     }
     const writeHead = [200, {
-      'Content-Type': contentType[getExt(req.url)],
+      'Content-Type': contentType[getExt(req.url)] || 'text/plain',
     }];
     res.writeHead(...writeHead);
     res.end(data);
