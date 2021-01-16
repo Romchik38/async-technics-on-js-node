@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const databaseCb  = require('./database-cb.js');
+const nonBlockCbFn = require('./libs')['non-block-cb-fn'];
 const DIR_PATH = __dirname + '/../database/';
 
 const read = (fileName, callback) => {
@@ -22,12 +23,9 @@ const serializers = {
       }
       //dosomething with cb
       const result =  JSON.parse(data);
-      const resData = [];
-      for (const item of result) {
-        const res = cb(item);
-        if (res) resData.push(res);
-      }
-      callback(null, resData);
+      nonBlockCbFn(result.slice(), (err, data) => {
+        callback(null, data);
+      }, cb, 200);
     });
   },
 };
