@@ -20,7 +20,9 @@ const templateMain = parameters => {
               `<div class="col-sm">
                 <div class="row">
                   <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="${user.photo}" alt="Card image cap">
+                    <a href="${user.url}">
+                      <img class="card-img-top" src="${user.photo}" alt="Card image cap">
+                    </a>
                     <div class="card-body">
                     <h5 class="card-title">${user.name + ' ' + user.lastname}</h5>
                     <p class="card-text">${user.shortdescription}</p>

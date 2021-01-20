@@ -10,5 +10,29 @@
     "url": "/users",
     "title": "Users Page | UltraVision",
     "menu": true
+  },
+  {
+    "name": "Ivan's user Page",
+    "url": "/users/ivan",
+    "title": "Ivan - User Page | UltraVision",
+    "menu": false
+  },
+  {
+    "name": "Gennadiy's user Page",
+    "url": "/users/gena",
+    "title": "Gennadiy - User Page | UltraVision",
+    "menu": false
+  },
+  {
+    "name": "Roman's user Page",
+    "url": "/users/roman",
+    "title": "Roman - User Page | UltraVision",
+    "menu": false
+  },
+  {
+    "name": "Lisa's user Page",
+    "url": "/users/lisa",
+    "title": "Lisa - User Page | UltraVision",
+    "menu": false
   }
 ]

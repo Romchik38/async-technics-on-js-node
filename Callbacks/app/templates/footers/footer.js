@@ -5,7 +5,7 @@ const templateFooter = parameters => {
       <footer>
         <hr />
         <p>For internal use only.</p>
-        <p>2020</p>
+        <p>2021</p>
       </footer>
     </div>
    </body>
