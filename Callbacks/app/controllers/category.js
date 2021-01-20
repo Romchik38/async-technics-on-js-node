@@ -6,8 +6,10 @@ const template = require('../templates.js')['category'];
 const pageGeneralParameters = require('../libs.js')['page-general-parameters'];
 const List = require('../libs.js')['list'];
 const forward =  require('../libs.js')['forward'];
+const copyObj = require('../libs.js')['copy-obj'];
 
 const obj = Object.create(null);
+const dq = copyObj(databaseQueries);
 const lastFn = callback => {
   try {
     const page = pageGeneralParameters(obj.dataUrls, obj.dataMenu);
@@ -22,9 +24,9 @@ const lastFn = callback => {
 };
 
 const category = (params, callback) => {
-  const queryUsers = databaseQueries['queryUsers'];
-  const queryMenu = databaseQueries['queryMenu'];
-  const queryUrl = databaseQueries['queryUrl'];
+  const queryUsers = dq['queryUsers'];
+  const queryMenu = dq['queryMenu'];
+  const queryUrl = dq['queryUrl'];
   queryUrl.cbParam[1].url = params.url;
   const list = new List();
   forward(list);

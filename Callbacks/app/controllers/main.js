@@ -4,13 +4,16 @@ const database = require('../database.js');
 const template = require('../templates.js')['main'];
 const databaseQueries = require('../database-queries.js');
 const pageGeneralParameters = require('../libs.js')['page-general-parameters'];
+const copyObj = require('../libs.js')['copy-obj'];
+
+const dq = copyObj(databaseQueries);
 
 const main = (params, callback) => {
   //do database request
-  const queryUsers = databaseQueries['queryUsers'];
-  const queryUrl = databaseQueries['queryUrl'];
+  const queryUsers = dq['queryUsers'];
+  const queryUrl = dq['queryUrl'];
   queryUrl.cbParam[1].url = params.url;
-  const queryMenu = databaseQueries['queryMenu'];
+  const queryMenu = dq['queryMenu'];
   //first request
   database(queryUsers, (err, dataUsers) => {
     if (err) {
