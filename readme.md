@@ -9,3 +9,7 @@
   2. Callbacks -  Неблокирующее итерирование:  
      * /app/libs/non-block-cb-fn.js - итерирующая функция  
      * /app/database.js - пример вызова.    
+
+  3. Callbacks - Асинхронность с библиотекой async.js  
+     * /app/controllers/user.js - пример последовательного вызова (serial)  
+
