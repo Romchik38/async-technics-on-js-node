@@ -13,3 +13,5 @@
   3. Callbacks - Асинхронность с библиотекой async.js  
      * /app/controllers/user.js - пример последовательного вызова (serial)  
 
+  4. Promise - Асинхронность на промисах
+     * переписал весь код с callbacks на promise
