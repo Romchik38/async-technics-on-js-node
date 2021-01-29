@@ -1,0 +1,9 @@
+[
+  { "/":"main",
+    "/users":"category",
+    "/users/ivan":"user",
+    "/users/gena":"user",
+    "/users/lisa":"user",
+    "/users/roman":"user"
+  }
+]
