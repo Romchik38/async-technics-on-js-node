@@ -4,7 +4,7 @@ const template = require('../templates.js')['category'];
 const pageGeneralParameters = require('../libs.js')['page-general-parameters'];
 
 const readJson = require('../libs.js')['readJson'];
-const dtbase = require('../../node_modules/@romchik38/dtbase');
+const dtbase = require("@romchik38/dtbase");
 const dtbaseFnUrl = require('../dtbaseFns/url.js');
 const dtbaseFnUrlsMenu = require('../dtbaseFns/urlsMenu.js');
 const dtbaseFnAll = require('../dtbaseFns/all.js');
