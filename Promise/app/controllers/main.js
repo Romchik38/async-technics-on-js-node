@@ -17,13 +17,15 @@ const main = (params) => new Promise((resolve, reject) => {
   Promise.all([
     dataReq1,
     dataReq2,
-  ]).catch(err => {
-    reject(err);
-  }).then(values => {
+  ]).then(values => {
     const [dataUrls, dataMenu] = values;
     const page = pageGeneralParameters(dataUrls[0], dataMenu);
     const html = template(page);
     resolve(html);
+  }, err => {
+    reject(err);
+  }).catch(err => {
+    reject(err);
   });
 });
 

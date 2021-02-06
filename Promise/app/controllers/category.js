@@ -20,9 +20,7 @@ const category = params => new Promise((resolve, reject) => {
     dataReq1,
     dataReq2,
     dataReq3
-  ]).catch(err => {
-    reject(err);
-  }).then(values => {
+  ]).then(values => {
     try {
       const [dataUsers, dataUrls, dataMenu] = values;
       const page = pageGeneralParameters(dataUrls[0], dataMenu);
@@ -32,6 +30,8 @@ const category = params => new Promise((resolve, reject) => {
     } catch (err) {
       reject(err);
     }
+  }, err => {
+    reject(err);
   });
 });
 

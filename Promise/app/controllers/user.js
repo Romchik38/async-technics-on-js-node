@@ -22,18 +22,16 @@ const user = params => new Promise((resolve, reject) => {
     dataReq1,
     dataReq2,
     dataReq3
-  ]).catch(err => {
-    reject(err);
-  }).then(values => {
-    try {
+  ]).then(values => {
       const [dataUsers, dataUrls, dataMenu] = values;
       const page = pageGeneralParameters(dataUrls[0], dataMenu);
       page['user'] = dataUsers[0];//отличие от category, передаем 1 польз-я
       const html = template(page);
       resolve(html);
-    } catch (err) {
-      reject(err);
-    }
+  }, err => {
+    reject(err);
+  }).catch(err => {
+    reject(err);
   });
 });
 
