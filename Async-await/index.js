@@ -13,6 +13,6 @@ const server = http.createServer((req, res) => {
 
 server.listen(8080, '127.0.0.1');
 
-server.on('error', err => {
+process.on('unhandledRejection', err => {
   console.log(err);
 });
