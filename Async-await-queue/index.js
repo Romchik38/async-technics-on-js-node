@@ -56,6 +56,11 @@ const server = http.createServer((req, res) => {
 
 server.listen(8080, '127.0.0.1');
 
+process.on('SIGINT', () => {
+  console.log('\nserver stoped');
+  server.close();
+});
+
 process.on('unhandledRejection', err => {
   console.log(err);
 });
